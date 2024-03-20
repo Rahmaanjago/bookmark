@@ -131,21 +131,43 @@
   Pricing
   Contact -->
 
+  <nav>
+    <div class="navigation_bar hidden">
+      <div class="nav_bar_mobile">
+        <ul>
+          <li><a href="">FEATURES</a></li>
+          <hr>
+          <li><a href="">PRICING</a></li>
+          <hr>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+      <hr />
+      <div class="nav_login_mobile">
+        <button class="login_mobile">LOGIN</button>
+      </div>
+    </div>
+  </nav>
+
     <header>
       <nav>
-        <div class="logo"><img src="images/logo-bookmark.svg" alt="" /></div>
+        <div class="logo">
+          <div class="logo_img">
+            <img src="images/logo-bookmark.svg" alt="" />
+          </div>
+          <div class="nav_icon" >
+            <img src="images/icon-hamburger.svg"  alt="">
+          </div>
+        </div>
         <div class="nav_bar">
-          <div class="header_list">
+          <div class="header_list hide_list">
             <ul>
               <li><a href="">FEATURES</a></li>
               <li><a href="">PRICING</a></li>
               <li><a href="">CONTACT</a></li>
             </ul>
           </div>
-          <button class="login">LOGIN</button>
-          <button class="nav_icon">
-            <img src="images/icon-hamburger.svg" alt="" />
-          </button>
+          <button class="login hide_login">LOGIN</button>
         </div>
       </nav>
     </header>
@@ -317,23 +339,18 @@
       <div class="footer_text">
         <p>35,000+ already joined</p>
         <h2>Stay up-to-date with what we're doing</h2>
-        <div>
-          <form action="">
-            <input
-              type="email"
-              name="email"
-              class="email"
-              placeholder="email@company.com"
-              required
-              pattern="[a-z\A-Z\0-9\+\-\.\!\$]+@[a-z\A-Z\0-9]"
-            />
-            <input
-              type="submit"
-              class="button"
-              value="Contact Us"
-            />
-          </form>
-        </div>
+
+        <form action="">
+          <input
+            type="email"
+            name="email"
+            class="email"
+            placeholder="email@company.com"
+            required
+            pattern="[a-z\A-Z\0-9\+\-\.\!\$]+@[a-z\A-Z\0-9]"
+          />
+          <input type="submit" class="button" value="Contact Us" />
+        </form>
       </div>
     </section>
 

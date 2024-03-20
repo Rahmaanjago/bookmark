@@ -7,6 +7,8 @@ const answer01 = document.querySelector('.ans01');
 const answer02 = document.querySelector('.ans02');
 const answer03 = document.querySelector('.ans03');
 const answer04 = document.querySelector('.ans04');
+const navHamburger = document.querySelector('.nav_icon');
+const navBar = document.querySelector('.navigation_bar');
 
 
 question_answer01.addEventListener('click' , function(){
@@ -25,3 +27,8 @@ question_answer04.addEventListener('click' , function(){
     answer04.classList.toggle('hidden2');
 });
 
+
+
+navHamburger.addEventListener('click' , function(){
+    navBar.classList.toggle('hidden');
+});
